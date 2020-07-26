@@ -150,11 +150,12 @@
     .back-end-div-other,
     .others {
         width: 90%;
+        height: auto;
         border-radius: 25px 25px 25px 25px;
         margin: 0px 0px 15px 5%;
     }
     .foot-layer {
-        height: 100px;
+        height: auto;
     }
     .foot-layer-name,
     .foot-layer-company {
