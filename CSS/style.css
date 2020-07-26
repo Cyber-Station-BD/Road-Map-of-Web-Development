@@ -1,0 +1,163 @@
+.body {
+    font-family: Arial;
+    font-size: 20px;
+    background-color: whitesmoke;
+    width: 100%;
+    height: auto;
+}
+
+.full {
+    color: whitesmoke;
+    background-image: url(p1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95%;
+    height: auto;
+    margin: 0% 2.5% 0% 2.5%;
+}
+
+.top {
+    background-color: aqua;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    text-decoration: underline;
+    text-align: center;
+    color: black;
+}
+
+.h {
+    text-decoration: underline;
+    font-family: cursive;
+    font-weight: 600;
+    color: rgb(0, 183, 255);
+    text-align: center;
+}
+
+.front-end {
+    width: 100%;
+    height: auto;
+    padding: 70px 20px 20px 20px;
+    font-weight: 600;
+    list-style-position: inside;
+    overflow: hidden;
+}
+
+.front-end-div {
+    width: 33%;
+    height: auto;
+    float: left;
+    border: 50px;
+    border-style: ridge;
+    border-color: rgb(76, 116, 119);
+    margin: 0px 0px 0px 4px;
+    padding: 0px 15px 0px 0px;
+}
+
+.front-end-div:hover {
+    border-color: rgb(10, 117, 51);
+    background-color: teal;
+    color: black;
+}
+
+.back-end {
+    padding: 10px 20px 20px 20px;
+    text-align: center;
+}
+
+.back-end-top {
+    width: 50%;
+    height: auto;
+    margin: 0% 0% 0% 37%;
+    text-align: left;
+}
+
+.back-end-div {
+    width: 100%;
+    border-radius: 25px;
+    padding: 0px 0px 0px 0px;
+}
+
+.back-end-div-other {
+    float: left;
+    text-align: left;
+    width: 33%;
+    height: 300px;
+    border-radius: 25px 25px 0px 0px;
+    margin: 0px 0px 0px 2px;
+    border-style: outset;
+    border: 35px;
+    border-style: ridge;
+    border-color: rgb(30, 43, 44);
+}
+
+.back-end-div-other:hover {
+    background-color: antiquewhite;
+    color: black;
+    border-color: rgb(85, 20, 20);
+}
+
+.others {
+    width: 40%;
+    height: auto;
+    text-align: left;
+    margin: 0% 0% 0% 30%;
+    background-color: rgba(0, 128, 128, 0.541);
+}
+
+.foot-layer {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.foot-layer-name {
+    text-align: center;
+    padding: 5px;
+    float: right;
+    width: 25%;
+}
+
+.foot-layer-company {
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+}
+
+
+/*Responsive Manually*/
+
+@media screen and (max-width: 900px) {
+    .full {
+        width: 90%;
+        margin: 0px 0px 0px 5%;
+    }
+    .front-end {
+        padding: 150px 20px 20px 20px;
+    }
+    .front-end-div {
+        width: 100%;
+        margin: 0px 0px 15px 0px;
+    }
+    .back-end-top {
+        width: 100%;
+        margin: 0px 0px 15px 0px;
+    }
+    .back-end {
+        width: 100%;
+        padding: 0px 20px 20px 20px;
+    }
+    .back-end-div-other,
+    .others {
+        width: 90%;
+        border-radius: 25px 25px 25px 25px;
+        margin: 0px 0px 15px 5%;
+    }
+    .foot-layer {
+        height: 100px;
+    }
+    .foot-layer-name,
+    .foot-layer-company {
+        width: 100%;
+    }
+}
