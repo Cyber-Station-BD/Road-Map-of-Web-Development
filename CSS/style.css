@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .body {
     font-family: Arial;
     font-size: 20px;
@@ -20,7 +24,8 @@
     color: whitesmoke;
     background-image: url(p1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     width: 97%;
     height: auto;
     margin: 0% 2.5% 0% 2.5%;
@@ -31,12 +36,12 @@
     height: auto;
     text-align: center;
     padding: 60px 20px 10px 20px;
-    background-color: rgba(222, 184, 135, 0.185);
 }
 
 .top-image img {
     width: 60%;
     border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px darkslateblue;
 }
 
 .h {
@@ -54,7 +59,7 @@
     font-weight: 600;
     list-style-position: inside;
     overflow: hidden;
-    background-color: rgba(30, 210, 90, 0.171);
+    background-color: rgba(13, 58, 44, 0.932);
 }
 
 .front-end-div {
@@ -69,15 +74,16 @@
 }
 
 .front-end-div:hover {
-    border-color: rgb(10, 117, 51);
-    background-color: teal;
-    color: black;
+    border-color: rgba(10, 117, 51, 0.801);
+    background-color: rgba(0, 128, 128, 0.493);
+    color: rgb(7, 7, 7);
+    cursor: grab;
 }
 
 .back-end {
     padding: 10px 20px 20px 20px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(63, 46, 46, 0.973);
 }
 
 .back-end-top {
@@ -107,9 +113,9 @@
 }
 
 .back-end-div-other:hover {
-    background-color: antiquewhite;
+    background-color: rgba(250, 235, 215, 0.473);
     color: black;
-    border-color: rgb(85, 20, 20);
+    border-color: rgba(85, 20, 20, 0.877);
 }
 
 .others {
@@ -117,12 +123,13 @@
     width: 40%;
     height: auto;
     text-align: left;
-    margin: 0% 5% 0% 5%;
-    background-color: rgba(0, 128, 128, 0.541);
+    margin: 10px 5% 20px 5%;
+    background-color: rgba(0, 128, 128, 0.966);
+    box-shadow: 0px 0px 5px 5px rgba(0, 128, 128, 0.767);
 }
 
 .others-back {
-    background-color: rgba(30, 48, 210, 0.102);
+    background-color: rgba(48, 66, 68, 0.842);
 }
 
 .others-list {
@@ -130,17 +137,6 @@
     float: left;
     margin: 0px 0px 0px 25%;
     padding: 0px 0px 20px 0px;
-}
-
-.others-list-youtube {
-    list-style-image: url(youtube.svg);
-}
-
-.others-list-youtube img {
-    width: 40px;
-    height: 40px;
-    background-color: rgb(107, 137, 163);
-    padding: 5px 5px 5px 5px;
 }
 
 .others-list ul {
@@ -156,40 +152,61 @@
     color: tomato;
 }
 
-.others-list ul a:active,
-.others-list-youtube a:active {
+.others-list ul a:active {
     color: brown;
 }
 
-.others-list ul a:visited,
-.others-list-youtube a:visited {
+.others-list ul a:visited {
     color: burlywood;
+}
+
+.social-link img {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(107, 137, 163);
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+}
+
+.social-link img:hover {
+    background-color: tomato;
+    border-radius: 17px;
+    border: 2px;
+    border-color: red;
+    border-style: dotted;
 }
 
 .last-home {
     width: 50px;
-    background-color: whitesmoke;
+    background-color: rgba(10, 229, 245, 0.479);
     float: right;
     margin-right: 5px;
+    border-radius: 5px;
+}
+
+.last-home:hover {
+    transform: rotateX(180deg)
 }
 
 .foot-layer {
     width: 100%;
-    height: 70px;
+    height: 40px;
     background-color: black;
     color: whitesmoke;
+    font-size: 17px;
 }
 
 .foot-layer-name {
-    text-align: center;
-    padding: 5px;
+    text-align: right;
+    padding: 7px 10px 0px 0px;
     float: right;
-    width: 25%;
+    width: 40%;
 }
 
 .foot-layer-company {
-    text-align: center;
-    padding: 20px 0px 0px 0px;
+    text-align: right;
+    width: 60%;
+    padding: 7px 0px 0px 0px;
 }
 
 .list-res {
@@ -239,8 +256,11 @@
         border-radius: 25px 25px 25px 25px;
         margin: 0px 0px 15px 5%;
     }
+    .others {
+        margin-bottom: 25px;
+    }
     .others-back {
-        padding: 0px 0px 20px 0px;
+        padding: 25px 0px 10px 0px;
     }
     .foot-layer {
         height: auto;
@@ -248,6 +268,8 @@
     .foot-layer-name,
     .foot-layer-company {
         width: 100%;
+        font-size: 15px;
+        text-align: center;
     }
     .list-res {
         width: 90%;
