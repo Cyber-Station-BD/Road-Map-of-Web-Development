@@ -192,6 +192,12 @@
     padding: 20px 0px 0px 0px;
 }
 
+.list-res {
+    width: 50%;
+    margin: 0px 0px 0px 25%;
+    padding: 0px 0px 20px 0px;
+}
+
 
 /*Responsive Manually*/
 
@@ -201,7 +207,7 @@
         margin: 0px 0px 0px 5%;
     }
     .top-image {
-        padding: 100px 20px 15px 20px;
+        padding: 130px 20px 15px 20px;
     }
     .top-image img {
         width: 100%;
@@ -212,10 +218,15 @@
     .front-end-div {
         width: 100%;
         margin: 0px 0px 15px 0px;
+        border: 30px;
+        border-style: ridge;
+        border-color: rgb(76, 116, 119);
+        font-size: 15px;
     }
     .back-end-top {
         width: 100%;
         margin: 0px 0px 15px 0px;
+        font-size: 13px;
     }
     .back-end {
         width: 100%;
@@ -237,5 +248,19 @@
     .foot-layer-name,
     .foot-layer-company {
         width: 100%;
+    }
+    .list-res {
+        width: 90%;
+        height: auto;
+        margin: 0px 5px 0px 5px;
+    }
+    .back-res {
+        font-size: 13px;
+        padding: 0px 0px 0px 0px;
+        text-align: left;
+        border-style: outset;
+        border: 20px;
+        border-style: ridge;
+        border-color: rgb(30, 43, 44);
     }
 }
