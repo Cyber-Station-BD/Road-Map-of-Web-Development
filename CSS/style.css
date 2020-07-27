@@ -6,16 +6,6 @@
     height: auto;
 }
 
-.full {
-    color: whitesmoke;
-    background-image: url(p1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 95%;
-    height: auto;
-    margin: 0% 2.5% 0% 2.5%;
-}
-
 .top {
     background-color: aqua;
     width: 100%;
@@ -24,6 +14,29 @@
     text-decoration: underline;
     text-align: center;
     color: black;
+}
+
+.full {
+    color: whitesmoke;
+    background-image: url(p1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 97%;
+    height: auto;
+    margin: 0% 2.5% 0% 2.5%;
+}
+
+.top-image {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 60px 20px 10px 20px;
+    background-color: rgba(222, 184, 135, 0.185);
+}
+
+.top-image img {
+    width: 60%;
+    border-radius: 10px;
 }
 
 .h {
@@ -37,10 +50,11 @@
 .front-end {
     width: 100%;
     height: auto;
-    padding: 70px 20px 20px 20px;
+    padding: 10px 10px 20px 10px;
     font-weight: 600;
     list-style-position: inside;
     overflow: hidden;
+    background-color: rgba(30, 210, 90, 0.171);
 }
 
 .front-end-div {
@@ -63,6 +77,7 @@
 .back-end {
     padding: 10px 20px 20px 20px;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .back-end-top {
@@ -98,11 +113,64 @@
 }
 
 .others {
+    float: left;
     width: 40%;
     height: auto;
     text-align: left;
-    margin: 0% 0% 0% 30%;
+    margin: 0% 5% 0% 5%;
     background-color: rgba(0, 128, 128, 0.541);
+}
+
+.others-back {
+    background-color: rgba(30, 48, 210, 0.102);
+}
+
+.others-list {
+    width: 50%;
+    float: left;
+    margin: 0px 0px 0px 25%;
+    padding: 0px 0px 20px 0px;
+}
+
+.others-list-youtube {
+    list-style-image: url(youtube.svg);
+}
+
+.others-list-youtube img {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(107, 137, 163);
+    padding: 5px 5px 5px 5px;
+}
+
+.others-list ul {
+    list-style-type: square;
+}
+
+.others-list ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.others-list ul a:hover {
+    color: tomato;
+}
+
+.others-list ul a:active,
+.others-list-youtube a:active {
+    color: brown;
+}
+
+.others-list ul a:visited,
+.others-list-youtube a:visited {
+    color: burlywood;
+}
+
+.last-home {
+    width: 50px;
+    background-color: whitesmoke;
+    float: right;
+    margin-right: 5px;
 }
 
 .foot-layer {
@@ -127,13 +195,19 @@
 
 /*Responsive Manually*/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .full {
         width: 90%;
         margin: 0px 0px 0px 5%;
     }
+    .top-image {
+        padding: 100px 20px 15px 20px;
+    }
+    .top-image img {
+        width: 100%;
+    }
     .front-end {
-        padding: 150px 20px 20px 20px;
+        padding: 15px 20px 0px 20px;
     }
     .front-end-div {
         width: 100%;
@@ -145,7 +219,7 @@
     }
     .back-end {
         width: 100%;
-        padding: 0px 20px 20px 20px;
+        padding: 15px 20px 0px 20px;
     }
     .back-end-div-other,
     .others {
@@ -153,6 +227,9 @@
         height: auto;
         border-radius: 25px 25px 25px 25px;
         margin: 0px 0px 15px 5%;
+    }
+    .others-back {
+        padding: 0px 0px 20px 0px;
     }
     .foot-layer {
         height: auto;
