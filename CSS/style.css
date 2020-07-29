@@ -11,13 +11,13 @@ html {
 }
 
 .top {
-    background-color: aqua;
     width: 100%;
     height: auto;
     position: fixed;
     text-decoration: underline;
     text-align: center;
     color: black;
+    background-color: aqua;
 }
 
 .full {
@@ -36,12 +36,36 @@ html {
     height: auto;
     text-align: center;
     padding: 60px 20px 10px 20px;
+    transition: all .5s;
 }
 
 .top-image img {
     width: 60%;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 5px darkslateblue;
+}
+
+.top-image img:hover {
+    transform: rotate(360deg);
+    transition: all 1.5s;
+}
+
+.last-home {
+    width: 3%;
+    text-align: right;
+    margin-left: 92%;
+    position: fixed;
+    transition: 1s;
+}
+
+.last-home img {
+    background-color: rgba(127, 255, 238, 0.521);
+    border-radius: 5px;
+    width: 25px;
+}
+
+.last-home:hover {
+    transform: rotateX(180deg)
 }
 
 .h {
@@ -71,6 +95,7 @@ html {
     border-color: rgb(76, 116, 119);
     margin: 0px 0px 0px 4px;
     padding: 0px 15px 0px 0px;
+    transition: ease-in-out .65s;
 }
 
 .front-end-div:hover {
@@ -110,12 +135,14 @@ html {
     border: 35px;
     border-style: ridge;
     border-color: rgb(30, 43, 44);
+    transition: all .5s;
 }
 
 .back-end-div-other:hover {
     background-color: rgba(250, 235, 215, 0.473);
     color: black;
     border-color: rgba(85, 20, 20, 0.877);
+    transform: scale3d(1.5)
 }
 
 .others {
@@ -143,6 +170,15 @@ html {
     list-style-type: square;
 }
 
+.others-list ul:hover,
+.list-res ol:hover,
+.body button:hover,
+.h:hover,
+.back-end-top ol:hover {
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
 .others-list ul a {
     text-decoration: none;
     color: white;
@@ -150,14 +186,11 @@ html {
 
 .others-list ul a:hover {
     color: tomato;
+    transition: all .5s;
 }
 
 .others-list ul a:active {
     color: brown;
-}
-
-.others-list ul a:visited {
-    color: burlywood;
 }
 
 .social-link img {
@@ -166,6 +199,7 @@ html {
     background-color: rgb(107, 137, 163);
     padding: 5px 5px 5px 5px;
     border-radius: 5px;
+    transition: all .5s;
 }
 
 .social-link img:hover {
@@ -174,18 +208,7 @@ html {
     border: 2px;
     border-color: red;
     border-style: dotted;
-}
-
-.last-home {
-    width: 50px;
-    background-color: rgba(10, 229, 245, 0.479);
-    float: right;
-    margin-right: 5px;
-    border-radius: 5px;
-}
-
-.last-home:hover {
-    transform: rotateX(180deg)
+    transform: rotate(360deg);
 }
 
 .foot-layer {
@@ -284,5 +307,9 @@ html {
         border: 20px;
         border-style: ridge;
         border-color: rgb(30, 43, 44);
+    }
+    .last-home {
+        margin-left: 80%;
+        margin-top: 50%;
     }
 }
