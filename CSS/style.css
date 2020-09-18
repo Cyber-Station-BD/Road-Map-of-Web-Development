@@ -226,6 +226,16 @@ html {
     width: 40%;
 }
 
+.foot-layer-name a {
+    text-decoration: none;
+}
+
+.foot-layer-name a:hover {
+    color: red;
+    font-size: large;
+    transition: all .25s;
+}
+
 .foot-layer-company {
     text-align: right;
     width: 60%;
